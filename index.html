@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2> Scientific Calculator</h2>
+        <input type="text" placeholder="Zaheer Ahmed" id="display" disabled>
+        <div class="buttons">
+            <button class="special" onclick="clearDisplay()">AC</button>
+            <button class="special" onclick="backspace()">⌫</button>
+            <button class="special" onclick="insert('%')">%</button>
+            <button class="special" onclick="insert('/')">÷</button>
+
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button class="special" onclick="insert('*')">×</button>
+
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button class="special" onclick="insert('-')">−</button>
+
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button class="special" onclick="insert('+')">+</button>
+
+            <button onclick="insert('0')">0</button>
+            <button onclick="insert('.')">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+
+            <button class="special" onclick="insert('sin(')">sin</button>
+            <button class="special" onclick="insert('cos(')">cos</button>
+            <button class="special" onclick="insert('tan(')">tan</button>
+            <button class="special" onclick="insert('Math.sqrt(')">√</button>
+
+            <button class="special" onclick="insert('Math.log10(')">log</button>
+            <button class="special" onclick="insert('Math.log(')">ln</button>
+            <button class="special" onclick="insert('**')">xʸ</button>
+            <button class="special" onclick="insert('Math.exp(')">eˣ</button>
+
+            <button class="special" onclick="insert('Math.PI')">π</button>
+            <button class="special" onclick="insert('Math.E')">e</button>
+            
+            <button class="special" onclick="insert('(')">(</button>
+            <button class="special" onclick="insert(')')">)</button>
+
+            <button class="special" onclick="insert('{')">{</button>
+            <button class="special" onclick="insert('}')">}</button>
+            <button class="special" onclick="insert('[')">[</button>
+            <button class="special" onclick="insert(']')">]</button>
+
+            <button class="special" onclick="insert('fact(')">x!</button>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
